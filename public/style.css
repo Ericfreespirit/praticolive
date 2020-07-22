@@ -1,0 +1,84 @@
+/* For desktop: */
+body{
+  margin: 10px;
+}
+
+.otablo{
+  color:#FF8900;
+  font-family: 'Source Sans Pro', sans-serif;  
+  font-size: 20px;
+  font-weight: bold; 
+   margin-block-start: 5px;
+  margin-block-end: 5px;
+}
+.whiteboard {
+  border: 2px solid grey;
+  cursor: crosshair;
+}
+
+.tools {
+ height: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+*
+#tool_pencil{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-right: 40px; 
+}
+
+#tool_eraser{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-left: 40px;
+
+}
+/* For Mobile */
+@media only screen and (max-width: 1024px) {
+  .otablo{
+    color:#FF8900;
+    font-family: 'Source Sans Pro', sans-serif;  
+    font-size: 20px;
+    font-weight: bold; 
+  }
+  #tool_pencil{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 50px; 
+  }
+  
+  #tool_eraser{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
+  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.color.black { background-color: black; }
+
+.color.white { background-color:white;}
+
+.color.red { background-color: red; }
+.color.green { background-color: green; }
+.color.blue { background-color: blue; }
+.color.yellow { background-color: yellow; }
+*/

@@ -1,0 +1,19 @@
+{
+  "name": "canvas3",
+  "version": "1.0.0",
+  "description": "A simple collaborative whiteboard using socket.io",
+  "main": "index.js",
+  "keywords": [
+    "socket.io",
+    "whiteboard"
+  ],
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "4.9.x",
+    "socket.io": "latest",
+    "swig": "^1.4.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}

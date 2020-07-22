@@ -1,0 +1,20 @@
+{
+    "name": "Otablo",
+    "short_name": "Otablo",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#FF8900",
+    "description": "A news app.",
+    "icons": [
+      {
+        "src": "image/favicon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "image/pencil_active.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }

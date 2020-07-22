@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Otablo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="image/favicon.png">
+
+
+</head>
+<body>
+  <div class="topbar">
+    <p class="otablo">Otablo</p>
+  </div>
+  <div class="canvasDiv">
+  <canvas class="whiteboard"></canvas>
+  </div>
+  <div class="tools">
+      <img id ="tool_pencil" src="image/pencil_active.png" onclick="changePencil()"> 
+      <img id ="tool_eraser" src="image/eraser.png" onclick="changeEraser()"> 
+    </div>
+  </div>
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+  <script>
+    function changePencil(){
+      if ((document.getElementById("tool_pencil").src.slice(-10) == "pencil.png"))
+      {
+        document.getElementById("tool_pencil").src = "image/pencil_active.png";
+        document.getElementById("tool_eraser").src = "image/eraser.png";
+      }
+    }
+    function changeEraser(){
+      if((document.getElementById("tool_eraser").src.slice(-10) == "eraser.png"))
+      {
+        document.getElementById("tool_eraser").src = "image/eraser_active.png";
+        document.getElementById("tool_pencil").src = "image/pencil.png";
+      }
+    }
+  </script>
+</body>
+</html>
+
